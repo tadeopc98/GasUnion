@@ -6,7 +6,8 @@ function createConnection() {
     user: 'doadmin',
     password: 'AVNS_EykNvKZvK_acs6OX1VK',
     database: 'gasunion',
-    port: '25060'
+    port: '25060',
+    sslmode: 'REQUIRED'
   });
 
   connection.connect((error) => {
