@@ -5,7 +5,8 @@ function createConnection() {
     host: 'db-mysql-nyc1-34916-do-user-14456800-0.b.db.ondigitalocean.com',
     user: 'doadmin',
     password: 'AVNS_EykNvKZvK_acs6OX1VK',
-    database: 'gasunion'
+    database: 'gasunion',
+    port: '25060'
   });
 
   connection.connect((error) => {
