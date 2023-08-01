@@ -18,6 +18,7 @@ const diaActual = fechaActual.getDate();
 const mesActual = fechaActual.getMonth()+1;
 const anioActual = fechaActual.getFullYear();
 const fechaCompleta = anioActual + '-' + mesActual + '-' + diaActual;
+const port = process.env.port || 3000
 
 app.use('/', require('./router'));
 
@@ -185,7 +186,7 @@ app.get('/createClient', (req,res)=>{
 
 
 // Iniciar el servidor
-const port = 3000;
-app.listen(port, '0.0.0.0', () => {
+
+app.listen(port, () => {
   console.log(`Servidor iniciado en http://localhost:${port}`);
 });
